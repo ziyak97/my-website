@@ -1,0 +1,107 @@
+@import '../../vars.css';
+.about {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.title {
+    color: var(--color-text-primary);
+    font-size: 2rem;
+}
+
+.title::before {
+    content: "01.";
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-right: 15px;
+}
+
+.title::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    background-color: var(--color-text-tertiary);
+    top: -8px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.description {
+    width: 55%;
+    color: var(--color-text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.description a {
+    color: var(--color-primary);
+    text-decoration: none;
+    position: relative;
+}
+
+.description a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.description a:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+.image__container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-left: auto;
+}
+
+.image {
+    width: 300px;
+    cursor: pointer;
+    transform: rotate(-20deg);
+    transition: all .8s;
+} 
+
+.image:hover {
+    transform: scale(1.1) rotate(0);
+}
+
+.image:active {
+    transform: translateY(2px);
+}
+
+.items {
+    display: grid;
+    margin-top: -12px;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    list-style: none;
+    color: var(--color-text-secondary);
+    padding-left: 0;
+}
+
+.item {
+    padding: 6px 0;
+}
+
+.item::before {
+    content: '▹';
+    transform: translateY(-2px);
+    margin-right: 10px;
+    font-size: .8rem;
+    display: inline-block;
+    color: var(--color-primary);
+}

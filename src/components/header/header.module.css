@@ -5,6 +5,7 @@
     margin: 0 auto;
     text-align: left;
     padding: 50px 0;
+    margin-top: 100px;
 }
 
 .name__paragraph {
@@ -15,21 +16,21 @@
 }
 
 .name__main {
-    color: var(--color-white-primary);
+    color: var(--color-text-primary);
     font-size: 4rem;
     margin-top: 6px;
     margin-bottom: 0;
 }
 
 .name__secondary {
-    color: var(--color-white-secondary);
+    color: var(--color-text-secondary);
     font-size: 4rem;
     margin-top: 4px;
 }
 
 .details {
     width: 55%;
-    color: var(--color-white-secondary);
+    color: var(--color-text-secondary);
     font-size: 1.2rem;
     line-height: 1.8rem;
 }

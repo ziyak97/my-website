@@ -1,12 +1,19 @@
 @import '../../vars.css';
+
 .navbar {
     display: flex;
     align-items: center;
     height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: var(--color-background);
+    z-index: 10;
+    transition: top 0.6s;
 }
 
 .icon {
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 1.6rem;
     margin-right: auto;
 }
@@ -26,7 +33,7 @@
 .items>* {
     padding: 0 16px;
     text-decoration: none;
-    color: var(--color-white-secondary);
+    color: var(--color-text-secondary);
     transition: all .4s;
 }
 
@@ -47,7 +54,7 @@
 .resume {
     color: var(--color-primary);
     font-size: 1.1rem;
-    margin-right: 20px;
+    margin-right: 50px;
     border: 1px solid;
     padding: 6px;
     border-radius: 5px;
