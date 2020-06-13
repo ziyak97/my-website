@@ -1,0 +1,80 @@
+@import '../../vars.css';
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.icon {
+    margin-left: 20px;
+    font-size: 1.6rem;
+    margin-right: auto;
+}
+
+.icon__logo {
+    width: 45px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border: none;
+}
+
+.items {
+    display: flex;
+    margin-right: 30px;
+}
+
+.items>* {
+    padding: 0 16px;
+    text-decoration: none;
+    color: var(--color-white);
+    transition: all .4s;
+}
+
+.item:not(.item__number):hover {
+    color: var(--color-primary);
+}
+
+.item:active {
+    transform: translateY(1px);
+}
+
+.item__number {
+    color: var(--color-primary);
+    font-size: .7rem;
+    margin-right: 4px;
+}
+
+.resume {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-right: 20px;
+    border: 1px solid;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.resume:active {
+    transform: translateY(2px);
+}
+
+.resume:hover {
+    /* to add left to right animation */
+    box-shadow: inset 100px 0 0 0 var(--color-secondary);
+}
+
+@keyframes color-rotate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.icon__logo:hover {
+    animation: color-rotate 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
