@@ -115,7 +115,7 @@
 .button {
     display: table;
     text-align: center;
-    margin: -40px auto 0;
+    margin: -60px auto 0;
     text-decoration: none;
     font-size: 1.4rem;
     color: var(--color-primary);

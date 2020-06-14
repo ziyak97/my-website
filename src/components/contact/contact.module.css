@@ -1,0 +1,50 @@
+.contact {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.title {
+    color: var(--color-primary);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.title::before {
+    content: "04.";
+    font-size: .8rem;
+    color: var(--color-primary);
+    margin-right: 15px;
+}
+
+.main__text {
+    color: var(--color-text-primary);
+    font-size: 3.5rem;
+    margin: 10px 0;
+}
+
+.secondary__text {
+    color: var(--color-text-secondary);
+    line-height: 24px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.button {
+    display: table;
+    text-align: center;
+    margin: 50px auto 0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    transition: all .4s;
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+}

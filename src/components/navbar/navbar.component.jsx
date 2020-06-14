@@ -24,7 +24,7 @@ const Navbar = () => {
                 <a href='#about' className={styles.item}><span className={styles.item__number}>01.</span> About</a>
                 <a href='#experience' className={styles.item}><span className={styles.item__number}>02.</span> Experience</a>
                 <a href='#work' className={styles.item}><span className={styles.item__number}>03.</span> Work</a>
-                <a href='#about' className={styles.item}><span className={styles.item__number}>04.</span> Contact</a>
+                <a href='#contact' className={styles.item}><span className={styles.item__number}>04.</span> Contact</a>
             </div>
             <div className={styles.resume}>Resume</div>
         </nav>
