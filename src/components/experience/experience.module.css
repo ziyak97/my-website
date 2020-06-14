@@ -1,9 +1,9 @@
 @import '../../vars.css';
 .experience {
-    width: 70%;
+    width: 55%;
     margin: 0 auto;
     text-align: left;
-    margin-top: 200px;
+    padding: 150px 0;
 }
 
 .title {
@@ -30,18 +30,17 @@
 }
 
 .container {
-    width: 70%;
+    width: 90%;
     color: var(--color-text-secondary);
     display: flex;
 }
-
-.tab {}
 
 .tab__link {
     cursor: pointer;
     border-left: 2px solid var(--color-text-tertiary);
     padding: 10px 20px;
     transition: box-shadow .8s;
+    width: 150px;
 }
 
 .active {
@@ -55,7 +54,6 @@
 
 
 .tab__content {
-    margin-left: 50px;
     display: none;
 }
 
@@ -63,6 +61,7 @@
     color: var(--color-text-primary);
     font-size: 1.4rem;
     font-weight: 600;
+    margin-top: 10px;
 }
 
 .job__date {
@@ -72,4 +71,27 @@
 
 .show__content {
     display: block;
+}
+
+.items {
+    margin-top: 12px;
+    list-style: none;
+    color: var(--color-text-secondary);
+    padding-left: 0;
+    position: relative;
+}
+
+.item {
+    padding: 6px 0 20px;
+    padding-left: 30px;
+}
+
+.item::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    margin-right: 10px;
+    font-size: 1rem;
+    display: inline-block;
+    color: var(--color-primary);
 }

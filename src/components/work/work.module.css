@@ -1,0 +1,130 @@
+@import '../../vars.css';
+.work {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 150px 0;
+}
+
+.title {
+    color: var(--color-text-primary);
+    font-size: 2rem;
+}
+
+.title::before {
+    content: "03.";
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-right: 15px;
+}
+
+.title::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    background-color: var(--color-text-tertiary);
+    top: -8px;
+    margin-left: 20px;
+}
+
+.work img {
+    width: 580px;
+    filter: grayscale(60);
+    transition: all .8s;
+}
+
+.work img:hover {
+    width: 580px;
+    transform: scale(1.03);
+    filter: initial;
+}
+
+.work img:active {
+    width: 580px;
+    transform: scale(1);
+    filter: initial;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 160px;
+}
+
+.details__container {
+    text-align: right;
+    margin-left: auto;
+    width: 190px;
+}
+
+.details__container__alt {
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+}
+
+.details__container h4 {
+    color: var(--color-primary);
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.details__container h3 {
+    margin-top: 10px;
+}
+
+.details__title {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-size: 1.4rem;
+}
+
+.details {
+    color: var(--color-text-4);
+    text-align: center;
+    position: relative;
+    width: 450px;
+    left: -300px;
+    z-index: 10;
+    padding: 20px;
+    background-color: var(--color-background-2);
+}
+
+.details__container__alt .details {
+    left: 0;
+}
+
+.items {
+    color: var(--color-text-secondary);
+    display: flex;
+    list-style: none;
+    margin-right: auto;
+    position: relative;
+    right: 200px;
+}
+
+.details__container__alt .items {
+    right: 0;
+}
+
+.item {
+    padding: 5px 10px;
+}
+
+.button {
+    display: table;
+    text-align: center;
+    margin: -40px auto 0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    transition: all .4s;
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+}

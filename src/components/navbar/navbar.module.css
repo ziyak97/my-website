@@ -59,7 +59,7 @@
     padding: 6px;
     border-radius: 5px;
     cursor: pointer;
-    transition: all .8s;
+    transition: all .4s;
 }
 
 .resume:active {
@@ -67,8 +67,7 @@
 }
 
 .resume:hover {
-    /* to add left to right animation */
-    box-shadow: inset 100px 0 0 0 var(--color-secondary);
+    background-color: var(--color-secondary);
 }
 
 @keyframes color-rotate {

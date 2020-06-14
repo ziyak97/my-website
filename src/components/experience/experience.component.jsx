@@ -1,5 +1,7 @@
 import React from 'react'
 
+import ScrollAnimation from 'react-animate-on-scroll'
+
 import styles from './experience.module.css'
 
 const Experirnce = () => {
@@ -14,29 +16,45 @@ const Experirnce = () => {
 
     }
     return (
-        <section className={styles.experience}>
-            <h3 className={styles.title}>What Is My Experience?</h3>
 
-            <div className={styles.container}>
+        <section id='experience' className={styles.experience}>
+            <ScrollAnimation animateIn="fadeIn" duration={1.5}>
 
-                <div id='tabs' className={styles.tab}>
-                    <div onClick={handleClick} className={`${styles.tab__link} ${styles.active}`}>Freelancing & Teaching</div>
-                    <div onClick={handleClick} className={styles.tab__link}>Audi</div>
+                <h3 className={styles.title}>What's My Experience?</h3>
+
+                <div className={styles.container}>
+
+                    <div id='tabs' className={styles.tab}>
+                        <div onClick={handleClick} className={`${styles.tab__link} ${styles.active}`}>Freelancing & Teaching</div>
+                        <div onClick={handleClick} className={styles.tab__link}>Audi</div>
+                    </div>
+
+                    <div id='Freelancing & Teaching' className={`${styles.tab__content} ${styles.show__content}`}>
+                        <p className={styles.job__title}>Freelancing and Teaching</p>
+                        <p className={styles.job__date}>February 2019 - Present</p>
+                        <ul className={styles.items}>
+                            <li className={styles.item}>Interface with clients on a as need basis, providing technological expertise</li>
+                            <li className={styles.item}>Teach HTML, CSS and Javascript to kids including how to solve algorithms</li>
+                            <li className={styles.item}>Provide consultancy to teams in regards to the technaical direction they should take</li>
+
+                        </ul>
+                    </div>
+
+                    <div id='Audi' className={styles.tab__content}>
+                        <p className={styles.job__title}>Interned @ AUDI</p>
+                        <p className={styles.job__date}>November 2018 - January 2019</p>
+                        <ul className={styles.items}>
+                            <li className={styles.item}>Helped with managing and maintaining the main server</li>
+                            <li className={styles.item}>Made sure only authenticated users got access to their resources</li>
+                            <li className={styles.item}>Found a solution to data retreival issues after our server was hacked</li>
+                            <li className={styles.item}>Proposed and implemented saftey measures to prevent hacks in the future</li>
+
+                        </ul>
+                    </div>
                 </div>
-
-                <div id='Freelancing & Teaching' className={`${styles.tab__content} ${styles.show__content}`}>
-                    <p className={styles.job__title}>Freelancing and Teaching</p>
-                    <p className={styles.job__date}>February 2019 - Present</p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos quo dolorum aliquid quae saepe nesciunt cupiditate debitis, ipsa, facere assumenda delectus vel praesentium exercitationem ab. Dolores deleniti voluptate quod.
-                </div>
-
-                <div id='Audi' className={styles.tab__content}>
-                    <p className={styles.job__title}>Interned @ AUDI</p>
-                    <p className={styles.job__date}>November 2018 - January 2019</p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos quo dolorum aliquid quae saepe nesciunt cupiditate debitis, ipsa, facere assumenda delectus vel praesentium exercitationem ab. Dolores deleniti voluptate quod.
-                </div>
-            </div>
+            </ScrollAnimation>
         </section>
+
     )
 }
 

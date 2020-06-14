@@ -1,25 +1,24 @@
 import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
 
 import Navbar from './components/navbar/navbar.component'
 import ToggleMode from './components/toggle-mode/toggle-mode.component'
 import Header from './components/header/header.component'
 import AboutMe from './components/about-me/about-me.component'
 import Experirnce from './components/experience/experience.component'
+import Work from './components/work/work.component'
 
 import './App.css'
 
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Router>
         <Navbar />
         <ToggleMode />
         <Header />
         <AboutMe />
         <Experirnce />
-      </Router>
+        <Work />
     </div>
   )
 }
