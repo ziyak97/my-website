@@ -1,0 +1,75 @@
+@import '../../vars.css';
+.experience {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 200px;
+}
+
+.title {
+    color: var(--color-text-primary);
+    font-size: 2rem;
+}
+
+.title::before {
+    content: "02.";
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-right: 15px;
+}
+
+.title::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    background-color: var(--color-text-tertiary);
+    top: -8px;
+    margin-left: 20px;
+}
+
+.container {
+    width: 70%;
+    color: var(--color-text-secondary);
+    display: flex;
+}
+
+.tab {}
+
+.tab__link {
+    cursor: pointer;
+    border-left: 2px solid var(--color-text-tertiary);
+    padding: 10px 20px;
+    transition: box-shadow .8s;
+}
+
+.active {
+    border-left: 2px solid var(--color-primary);
+}
+
+.tab__link:hover {
+    box-shadow: inset 150px 0 0 0 var(--color-secondary);
+    color: var(--color-text-primary);
+}
+
+
+.tab__content {
+    margin-left: 50px;
+    display: none;
+}
+
+.job__title {
+    color: var(--color-text-primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.job__date {
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+.show__content {
+    display: block;
+}

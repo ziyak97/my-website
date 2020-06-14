@@ -5,9 +5,10 @@ import Navbar from './components/navbar/navbar.component'
 import ToggleMode from './components/toggle-mode/toggle-mode.component'
 import Header from './components/header/header.component'
 import AboutMe from './components/about-me/about-me.component'
-
+import Experirnce from './components/experience/experience.component'
 
 import './App.css'
+
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <ToggleMode />
         <Header />
         <AboutMe />
+        <Experirnce />
       </Router>
     </div>
   )
