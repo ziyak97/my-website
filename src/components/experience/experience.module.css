@@ -22,7 +22,7 @@
     content: '';
     display: inline-block;
     position: relative;
-    width: 300px;
+    width: 20%;
     height: 1px;
     background-color: var(--color-text-tertiary);
     top: -8px;
@@ -51,7 +51,6 @@
     box-shadow: inset 150px 0 0 0 var(--color-secondary);
     color: var(--color-text-primary);
 }
-
 
 .tab__content {
     display: none;
@@ -82,6 +81,7 @@
 }
 
 .item {
+    width: 100%;
     padding: 6px 0 20px;
     padding-left: 30px;
 }
@@ -94,4 +94,48 @@
     font-size: 1rem;
     display: inline-block;
     color: var(--color-primary);
+}
+
+@media only screen and (max-width: 992px) {
+    .experience {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .experience {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .experience {
+        width: 90%;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .title::before {
+        font-size: 1.2rem;
+    }
+    .title::after {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .tab {
+        display: flex;
+        margin-top: 30px;
+    }
+    .tab__link {
+        border-top: 2px solid var(--color-text-tertiary);
+        border-left: none;
+        transition: none;
+        width: 100px;
+    }
+    .active {
+        border-top: 2px solid var(--color-primary);
+    }
 }

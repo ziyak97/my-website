@@ -1,3 +1,4 @@
+@import '../../vars.css';
 .contact {
     width: 40%;
     margin: 0 auto;
@@ -47,4 +48,26 @@
 
 .button:hover {
     background-color: var(--color-secondary);
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+@media only screen and (max-width: 992px) {
+    .contact {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {
+        width: 90%;
+    }
 }

@@ -7,6 +7,7 @@ import AboutMe from './components/about-me/about-me.component'
 import Experirnce from './components/experience/experience.component'
 import Work from './components/work/work.component'
 import Contact from './components/contact/contact.component'
+import Footer from './components/footer/footer.component'
 
 import './App.css'
 
@@ -21,6 +22,7 @@ const App = () => {
         <Experirnce />
         <Work />
         <Contact />
+        <Footer />
     </div>
   )
 }

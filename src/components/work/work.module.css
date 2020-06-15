@@ -22,27 +22,28 @@
     content: '';
     display: inline-block;
     position: relative;
-    width: 300px;
+    width: 20%;
     height: 1px;
     background-color: var(--color-text-tertiary);
     top: -8px;
     margin-left: 20px;
 }
 
-.work img {
-    width: 580px;
+.project img {
+    width: 100%;
+    min-width: 80%;
+    flex-grow: 2;
     filter: grayscale(60);
     transition: all .8s;
+    height: 100%;
 }
 
-.work img:hover {
-    width: 580px;
+.project img:hover {
     transform: scale(1.03);
     filter: initial;
 }
 
-.work img:active {
-    width: 580px;
+.project img:active {
     transform: scale(1);
     filter: initial;
 }
@@ -54,13 +55,12 @@
 
 .details__container {
     text-align: right;
-    margin-left: auto;
-    width: 190px;
+    flex-grow: 1;
+    max-width: 40%;
+    height: 100%;
 }
 
 .details__container__alt {
-    margin-left: 0;
-    margin-right: auto;
     text-align: left;
 }
 
@@ -83,9 +83,10 @@
 .details {
     color: var(--color-text-4);
     text-align: center;
+    max-height: 10%;
+    width: 120%;
     position: relative;
-    width: 450px;
-    left: -300px;
+    right: 90px;
     z-index: 10;
     padding: 20px;
     background-color: var(--color-background-2);
@@ -96,12 +97,11 @@
 }
 
 .items {
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
     display: flex;
+    padding: 0;
     list-style: none;
     margin-right: auto;
-    position: relative;
-    right: 200px;
 }
 
 .details__container__alt .items {
@@ -128,3 +128,72 @@
 .button:hover {
     background-color: var(--color-secondary);
 }
+
+.button:active {
+    transform: translateY(2px);
+}
+
+@media only screen and (max-width: 992px) {
+    .work {
+        width: 80%;
+    }
+    .items {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .work {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .work {
+        width: 90%;
+    }
+    .title {
+        font-size: 1.6rem;
+    }
+    .title::before {
+        font-size: 1.2rem;
+    }
+    .title::after {
+        display: none;
+    }
+    .project {
+        position: relative;
+    }
+    .project img {
+        position: absolute;
+        filter: opacity(.15);
+        transition: none;
+        left: 0
+    }
+
+    .details__container {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.452);
+        z-index: 10;
+        min-width: 100%;
+    }
+    .details {
+        max-width: 80%;
+        right: 0;
+        margin: 0 auto;
+    }
+    .items {
+        flex-direction: row;
+        padding: 30px 0;
+    }
+    .item {
+        margin: auto;
+    }
+    .details__container h4 {
+        font-weight: 600;
+    }
+    .details__title {
+        font-weight: 600;
+    }
+}
+
