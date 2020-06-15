@@ -5,7 +5,6 @@
   right: 70px;
   display: flex;
   align-items: center;
-  z-index: 10;
 }
 
 .toggle__container span {

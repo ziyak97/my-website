@@ -15,7 +15,6 @@ const ToggleMode = () => {
     }, [])
 
     const handleClick = () => {
-        console.log('clicked')
         const mode = document.body.classList[0]
         if (mode === 'light') {
             document.body.classList.remove('light')

@@ -173,7 +173,7 @@
 
     .details__container {
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.452);
+        background-color: var(--color-root-filter);
         z-index: 10;
         min-width: 100%;
     }
@@ -191,9 +191,13 @@
     }
     .details__container h4 {
         font-weight: 600;
+        color: var(--color-root-primary);
     }
     .details__title {
-        font-weight: 600;
+        font-weight: 800;
+    } 
+    .item {
+        font-weight: 900;
     }
 }
 
