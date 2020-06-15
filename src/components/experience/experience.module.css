@@ -84,6 +84,7 @@
     width: 90%;
     padding: 6px 0 20px;
     padding-left: 30px;
+    font-size: .9rem;
 }
 
 .item::before {
