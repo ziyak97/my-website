@@ -4,7 +4,6 @@
     align-items: center;
     height: 10vh;
     width: 100vw;
-    overflow: hidden;
     position: fixed;
     top: 0;
     background-color: var(--color-background);

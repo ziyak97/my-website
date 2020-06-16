@@ -77,7 +77,7 @@ const Work = () => {
                 </ScrollAnimation>
 
                 <ScrollAnimation animateIn="fadeIn" duration={1.5}>
-                    <a href='#a' className={styles.button}>Other Projects</a>
+                    <a href="https://github.com/ziyak97/" target='_blank' rel="noopener noreferrer" className={styles.button}>Other Projects</a>
                 </ScrollAnimation>
 
             </ScrollAnimation>
