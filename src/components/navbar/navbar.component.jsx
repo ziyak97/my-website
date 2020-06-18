@@ -1,6 +1,7 @@
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 
 import logo from '../../images/navbar-icon.png'
+import resume from '../../pdf/resume.pdf'
 
 import styles from './navbar.module.css'
 
@@ -60,7 +61,7 @@ const Navbar = () => {
         <a href='#experience' className={styles.item} onClick={closeNav}><span className={styles.item__number}>02.</span> Experience</a>
         <a href='#work' className={styles.item} onClick={closeNav}><span className={styles.item__number}>03.</span> Work</a>
         <a href='#contact' className={styles.item} onClick={closeNav}><span className={styles.item__number}>04.</span> Contact</a>
-        <a href='#a' className={`${styles.resume} ${styles.item}`} onClick={closeNav}>Resume</a>
+        <a href={resume} target='_blank' rel="noopener noreferrer" className={`${styles.resume} ${styles.item}`} onClick={closeNav}>Resume</a>
       </div>
 
       <span className={styles.menu} onClick={openNav}>

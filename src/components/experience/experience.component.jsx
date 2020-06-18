@@ -34,8 +34,8 @@ const Experirnce = () => {
                         <p className={styles.job__date}>February 2019 - Present</p>
                         <ul className={styles.items}>
                             <li className={styles.item}>Interface with clients on a as need basis, providing technological expertise</li>
-                            <li className={styles.item}>Teach HTML, CSS and Javascript to kids including how to solve algorithms</li>
-                            <li className={styles.item}>Provide consultancy to teams in regards to the technaical direction they should take</li>
+                            <li className={styles.item}>Teach HTML, CSS and Javascript to kids, including how to solve algorithms</li>
+                            <li className={styles.item}>Provide consultancy to teams in regards to the technical direction they should take</li>
 
                         </ul>
                     </div>
@@ -46,8 +46,8 @@ const Experirnce = () => {
                         <ul className={styles.items}>
                             <li className={styles.item}>Helped with managing and maintaining the main server</li>
                             <li className={styles.item}>Made sure only authenticated users got access to their resources</li>
-                            <li className={styles.item}>Found a solution to data retreival issues after our server was hacked</li>
-                            <li className={styles.item}>Proposed and implemented saftey measures to prevent hacks in the future</li>
+                            <li className={styles.item}>Found a solution to data retrieval issues after our server was hacked</li>
+                            <li className={styles.item}>Proposed and implemented safety measures to prevent hacking in the future</li>
 
                         </ul>
                     </div>
