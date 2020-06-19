@@ -243,6 +243,9 @@ svg {
         font-weight: 600;
         color: var(--color-root-primary);
     }
+    .details__container__alt .details {
+        left: 0;
+    }    
     .details__title {
         font-weight: 800;
     }
