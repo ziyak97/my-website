@@ -17,7 +17,7 @@ const Work = () => {
         <section id='work' className={styles.work}>
             <ScrollAnimation animateIn="fadeIn" duration={1.5}>
 
-                <h3 className={styles.title}>Some Stuff I've Build</h3>
+                <h3 className={styles.title}>Some Stuff I've Built</h3>
 
                 <ScrollAnimation animateIn="fadeIn" duration={1.5}>
                     <div className={styles.project}>
