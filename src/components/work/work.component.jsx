@@ -28,7 +28,7 @@ const Work = () => {
                         <div className={styles.details__container}>
                             <h4>Featured Project</h4>
                             <h3><a href="https://ziyak-clothing.herokuapp.com/" target='_blank' rel="noopener noreferrer" className={styles.details__title}>E-Commerce Site</a></h3>
-                            <div className={styles.details}>An E-Commerce site where items can be dynamically added and removed via an admin panel. Items purchased can be added to a cart. Once done adding items to a cart you can go to checkout where you can remove items you don't want and pay for the items.</div>
+                            <div className={styles.details}>An E-Commerce site where items can be dynamically added and removed via an admin panel. Items purchased can be added to a cart. Once done adding items to a cart you can go to checkout where you can remove items you don't want and pay for the other items.</div>
                             <ul className={styles.items}>
                                 <li className={styles.item}>React</li>
                                 <li className={styles.item}>Node.js</li>
@@ -54,7 +54,7 @@ const Work = () => {
                         <div className={`${styles.details__container} ${styles.details__container__alt}`}>
                             <h4>Featured Project</h4>
                             <h3><a href="https://snowbrightimports.com/" target='_blank' rel="noopener noreferrer" className={styles.details__title}>Single Page Site</a></h3>
-                            <div className={styles.details}>In this project for a client I made a mobile friendly, responsive single page site. This highly responsive and SEO friendly has helped my client in his sales.</div>
+                            <div className={styles.details}>In this project for a client I made a mobile friendly, responsive single page site. This highly responsive and SEO friendly website has helped my client in his sales.</div>
                             <ul className={styles.items}>
                                 <li className={styles.item}>HTML</li>
                                 <li className={styles.item}>CSS</li>

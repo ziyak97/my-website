@@ -33,9 +33,9 @@ const Experirnce = () => {
                         <p className={styles.job__title}>Freelancing and Teaching</p>
                         <p className={styles.job__date}>February 2019 - Present</p>
                         <ul className={styles.items}>
-                            <li className={styles.item}>Interface with clients on a as need basis, providing technological expertise</li>
+                            <li className={styles.item}>Interface with clients on an as needed basis, providing technological expertise</li>
                             <li className={styles.item}>Teach HTML, CSS and Javascript to kids, including how to solve algorithms</li>
-                            <li className={styles.item}>Provide consultancy to teams in regards to the technical direction they should take</li>
+                            <li className={styles.item}>Provide consultancy to teams with regards to the technical direction they should take</li>
 
                         </ul>
                     </div>
