@@ -39,7 +39,6 @@
     cursor: pointer;
     border-left: 2px solid var(--color-text-tertiary);
     padding: 10px 20px;
-    font-weight: 600;
     transition: box-shadow .8s;
     width: 150px;
 }
@@ -47,6 +46,7 @@
 .active {
     border-left: 2px solid var(--color-primary);
     color: var(--color-primary);
+    font-weight: 700;
 }
 
 .tab__link:hover {
