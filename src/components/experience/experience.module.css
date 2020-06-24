@@ -39,17 +39,18 @@
     cursor: pointer;
     border-left: 2px solid var(--color-text-tertiary);
     padding: 10px 20px;
+    font-weight: 600;
     transition: box-shadow .8s;
     width: 150px;
 }
 
 .active {
     border-left: 2px solid var(--color-primary);
+    color: var(--color-primary);
 }
 
 .tab__link:hover {
     box-shadow: inset 150px 0 0 0 var(--color-secondary);
-    color: var(--color-text-primary);
 }
 
 .tab__content {
