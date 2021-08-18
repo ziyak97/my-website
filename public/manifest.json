@@ -1,0 +1,65 @@
+{
+  "name": "Appzer",
+  "short_name": "Appzer",
+  "start_url": "/",
+  "theme_color": "rgb(22, 159, 142)",
+  "background_color": "rgb(22, 159, 142)",
+  "display": "standalone",
+  "orientation": "portrait",
+  "gcm_sender_id": "482941778795",
+  "icons": [
+    {
+      "sizes": "120x120",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/3e97da58-30ed-4cd4-a429-067139822f3b.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "152x152",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/820848f2-88ec-426e-9866-c9780421fc01.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "192x192",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/ac7070d1-e3d3-43d4-928e-060105a462e7.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "36x36",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/297b7397-4ab4-4b13-871d-00b2e3b2f089.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "48x48",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/f0e4e02c-3162-42c6-b66f-12efdb3d94cf.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "512x512",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/5220a05d-c7ce-45d2-9752-8cc78e14df01.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "60x60",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/1980e66c-a7ac-4ee2-9f79-85dece7db434.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "72x72",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/91e9ba71-0f05-41b1-a6d3-0e737214de72.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "76x76",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/ec1b4de6-28ce-49c3-9466-a6a6e7af5f4f.png",
+      "type": "image/png"
+    },
+    {
+      "sizes": "96x96",
+      "src": "https://beezer-img-storage.s3.amazonaws.com/images/b56697f1-d608-4988-b734-194f03d5f26c.png",
+      "type": "image/png"
+    }
+  ],
+  "url": "https://optimistic-franklin-8e65eb.netlify.app/",
+  "lang": "",
+  "screenshots": []
+}
